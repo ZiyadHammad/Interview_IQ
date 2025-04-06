@@ -13,10 +13,7 @@ import { toast } from "sonner";
 import FormField from "./FormField";
 import { useRouter } from "next/navigation";
 import { signIn, signUp } from "@/lib/actions/auth.action";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
 const authFormSchema = (type: FormType) => {
   return z.object({
